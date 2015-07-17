@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        Crashlytics.startWithAPIKey("5e0fa4f80b0778f355493734b5f3847a5a0f49af")
         return true
     }
 
